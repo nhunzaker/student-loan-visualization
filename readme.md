@@ -2,6 +2,6 @@
 
 ```shell
 bundle install
-ruby importer.rb
+ruby import.rb
 rackup
 ```
