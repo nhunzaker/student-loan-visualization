@@ -15,5 +15,6 @@
 
 # Help
 
+- http://chimera.labs.oreilly.com/books/1230000000345
 - http://www.ruby-doc.org/core-2.1.1/Struct.html
 - http://stackoverflow.com/questions/3717464/ruby-parse-csv-file-with-header-fields-as-attributes-for-each-row
