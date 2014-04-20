@@ -1,0 +1,68 @@
+body, html {
+  background: rgba(52, 59, 80, 1);
+  color: #d9d9d9;
+  font: 100 100%/100% "Merriweather Sans", Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather";
+  font-weight: 100;
+  margin: 0 0 10px 0;
+}
+
+.description {
+  bottom: 20px;
+  left: 20px;
+  position: absolute;
+}
+
+.description-heading {
+  font-size: 28px;
+}
+
+a {
+  color: #aaa;
+}
+
+#tooltip {
+  background-color: #555;
+  border: 1px solid #888;
+  border-radius: 3px;
+  box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.2);
+  height: auto;
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  text-transform: capitalize;
+  transform: translate(-2px, -100%);
+  transition: 0.2s all ease-in-out;
+  width: 200px;
+}
+
+#tooltip p {
+  margin: 0;
+}
+
+#tooltip-heading {
+  line-height: 1.5em;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+}
+
+#tooltip-value {
+  font-size: 12px;
+}
+
+#tooltip.hidden {
+  display: none;
+}
+
+path.state {
+  fill: transparent;
+  stroke: rgba(200, 200, 255, 0.4);
+}

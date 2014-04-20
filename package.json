@@ -1,0 +1,30 @@
+{
+  "name": "loans",
+  "version": "0.0.0",
+  "description": "Visualization of student loans by college",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nhunzaker/student-loan-visualization.git"
+  },
+  "private": true,
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhunzaker/student-loan-visualization/issues"
+  },
+  "homepage": "https://github.com/nhunzaker/student-loan-visualization",
+  "dependencies": {
+    "gulp": "^3.6.0",
+    "gulp-util": "^2.2.14",
+    "browserify": "^3.38.0",
+    "gulp-watch": "^0.5.3",
+    "es6ify": "^1.1.0",
+    "backbone": "^1.1.2",
+    "jquery": "^2.1.0",
+    "vinyl-source-stream": "^0.1.1"
+  }
+}
