@@ -1,6 +1,6 @@
 # Geographic Visualization of student loans
 
-![screenshot](https://github.com/nhunzaker/student-loan-visualization/blob/master/public/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/nhunzaker/student-loan-visualization/master/public/screenshot.png)
 
 
 ```shell
