@@ -4,10 +4,13 @@ require './config/database.rb'
 require './lib/clean.rb'
 require 'csv'
 
-CSV.foreach('./data/zip.csv', headers: true) do |row|
-  Zipcode.create!(:id        => Clean.int(row['GEOID']),
-                  :latitude  => Clean.float(row['INTPTLAT']),
-                  :longitude => Clean.float(row['INTPTLONG']))
+['./data/zipcodes_2012.csv', './data/zipcodes_2013.csv'].each do |file|
+  CSV.foreach(file, headers: true) do |row|
+    zip = Zipcode.first_or_create(:id => Clean.int(row['GEOID']))
+    zip.update(:latitude  => Clean.float(row['INTPTLAT']),
+               :longitude => Clean.float(row['INTPTLONG']))
+    zip.save()
+  end
 end
 
 CSV.foreach('./data/subsidized.csv', headers: true) do |row|
